@@ -1,39 +1,20 @@
 # NLP Emotion & Sentiment Analysis
 
-An NLP-based project for analyzing emotions and sentiment from conversational text using the EmpatheticDialogues dataset and transformer-based models.
+This project uses Natural Language Processing (NLP) to analyze emotions and sentiment in conversational text.
 
-## Overview
+## About the Project
 
-Understanding emotions in text is an important part of Natural Language Processing, especially for applications such as conversational AI, customer support, and emotion-aware systems.
+The project uses the EmpatheticDialogues dataset and a RoBERTa-based transformer model for emotion and sentiment classification.
 
-This project explores emotion and sentiment classification on conversational data. The workflow includes data preprocessing, emotion label processing, dataset balancing, text tokenization, transformer-based model training, and evaluation.
+The main steps include:
 
-## Dataset
-
-The project uses the **EmpatheticDialogues** dataset, which contains conversational examples associated with different emotional situations.
-
-The dataset is not included in this repository. Users should obtain the dataset separately and provide the required files before running the notebook.
-
-## Methodology
-
-The overall workflow is:
-
-1. Load and inspect the conversational dataset
-2. Clean and preprocess the text data
-3. Process and organize emotion labels
-4. Map emotions into sentiment categories where required
-5. Split the data into training, validation, and test sets
-6. Handle class imbalance
-7. Tokenize the text using a transformer tokenizer
-8. Fine-tune a RoBERTa-based classification model
-9. Evaluate the trained model
-10. Analyze the classification results
-
-## Model
-
-The project uses **RoBERTa (Robustly Optimized BERT Pretraining Approach)** for transformer-based text classification.
-
-RoBERTa is fine-tuned on the conversational dataset to learn patterns associated with different emotional and sentiment categories.
+- Data preprocessing
+- Emotion label processing
+- Handling class imbalance
+- Text tokenization
+- RoBERTa model training
+- Model evaluation
+- Result visualization
 
 ## Technologies Used
 
@@ -44,11 +25,25 @@ RoBERTa is fine-tuned on the conversational dataset to learn patterns associated
 - PyTorch
 - Hugging Face Transformers
 - Hugging Face Datasets
-- Sentence Transformers
 - Matplotlib
 - Seaborn
 - Imbalanced-learn
-- Jupyter Notebook
+
+## Dataset
+
+The project uses the EmpatheticDialogues dataset, which contains conversational text associated with different emotional situations.
+
+The dataset is not included in this repository.
+
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then open the `emotion_sentiment_analysis.ipynb` notebook and run the cells.
 
 ## Project Structure
 
@@ -59,3 +54,8 @@ NLP-Emotion-Sentiment-Analysis/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
+
+## Author
+
+NagaRamyaSree
