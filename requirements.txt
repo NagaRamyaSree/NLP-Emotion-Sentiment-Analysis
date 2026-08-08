@@ -5,7 +5,5 @@ seaborn
 scikit-learn
 imbalanced-learn
 torch
-transformers
 datasets
-sentence-transformers
-nltk
+transformers
